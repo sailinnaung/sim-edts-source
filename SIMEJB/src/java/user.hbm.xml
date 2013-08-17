@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+  <class name="sim.datatransfer.UserDTO" table="user">
+    <meta attribute="class-description"> User details </meta>
+    <id name="uid" type="int" column="uid">
+      <generator class="native" />
+    </id>
+    <property name="username" column="username" />
+    <property name="password" column="password" />
+    <property name="email" column="email" />  
+    <property name="unisimId" column="unisim_id" />  
+    <many-to-one name="userRole" class="sim.datatransfer.RoleDTO" column="rid" not-null="true" cascade="none"  lazy="false"/>
+  </class>
+</hibernate-mapping>
