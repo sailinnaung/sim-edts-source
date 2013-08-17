@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+  <class name="sim.datatransfer.CourseStatusDTO" table="course_status">
+    <meta attribute="class-description"> Course Status Details </meta>
+    <id name="statusId" type="int" column="status_id">
+      <generator class="native" />
+    </id>
+    <property name="statusName" column="course_status_name" />
+  </class>
+</hibernate-mapping>

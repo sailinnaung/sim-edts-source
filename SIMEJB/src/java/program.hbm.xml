@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+  <class name="sim.datatransfer.ProgramDTO" table="program">
+    <meta attribute="class-description"> Program Details </meta>
+    <id name="programId" type="int" column="program_id">
+      <generator class="native" />
+    </id>
+    <property name="programCode" column="program_code" />
+    <property name="programName" column="program_name" />
+  </class>
+</hibernate-mapping>
