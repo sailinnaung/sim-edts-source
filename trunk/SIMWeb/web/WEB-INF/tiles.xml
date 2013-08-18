@@ -1,0 +1,90 @@
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+  <definition name="mainLayout" template="/tiles/Layout.jsp">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="menu"      value="/tiles/Menu.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+    <put-attribute name="bodyTitle" value="Body Title"/>
+  </definition>
+   
+  <definition name="tiles.main" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/example/HelloWorld.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+    <put-attribute name="jsfile" value="/js/subu.js"/>
+  </definition>    
+  
+  <definition name="tiles.col.chart.show" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/example/col-chart.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition>  
+ 
+  <definition name="tiles.col.chart.input" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/example/col-chart-input.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition>  
+  
+   <definition name="tiles.pie.chart.show" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/example/pie-chart.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition>  
+ 
+  <definition name="tiles.pie.chart.input" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/example/pie-chart-input.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition>  
+  
+   <definition name="tiles.bar.chart.show" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/example/bar-chart.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition>  
+ 
+  <definition name="tiles.bar.chart.input" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/example/bar-chart-input.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition>  
+  
+     <definition name="tiles.line.chart.show" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/example/line-chart.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition>  
+ 
+  <definition name="tiles.line.chart.input" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/example/line-chart-input.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition>  
+
+  
+  <definition name="tiles.excel.upload" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/excel/import.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition> 
+  
+  <definition name="tiles.excel.success" extends="mainLayout">
+    <put-attribute name="header"    value="/tiles/Header.jsp"/>
+    <put-attribute name="first-sidebar"      value="/tiles/First-Sidebar.jsp"/>
+    <put-attribute name="body"  value="/excel/success.jsp"/>
+    <put-attribute name="footer"    value="/tiles/Footer.jsp"/>
+  </definition> 
+</tiles-definitions>
